@@ -1,3 +1,8 @@
+/*
+	MERGE SORT IMPLEMENTATION
+	TIME COMPLEXITY : O(nlogn).
+*/
+
 #include<iostream>
 using namespace std;
 
