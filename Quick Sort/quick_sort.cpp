@@ -1,3 +1,9 @@
+/*
+	QUICK SORT IMPLEMENTATION
+	TIME COMPLEXITY : 
+			BEST CASE:O(nlogn).
+			WORST CASE:O(n^2).
+*/
 #include<iostream>
 using namespace std;
 long long int  partition( long long int  a[],  long long int  l,  long long int  r)
