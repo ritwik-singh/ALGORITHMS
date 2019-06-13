@@ -29,12 +29,12 @@ void merge(long long int start,long long int end,long long  int mid,long long  i
 		a[start++] = copy[i];
 }
 
-void merge_sort(long long int start,long long int end,long long int a[])
+void merge_sort&count(long long int start,long long int end,long long int a[])
 {
 	if(start<end){
 		long long int mid = (start+end)/2;
-		merge_sort(start,mid,a);
-		merge_sort(mid+1,end,a);
+		merge_sort&count(start,mid,a);
+		merge_sort&count(mid+1,end,a);
 		merge(start,end,mid,a);
 	}
 
@@ -49,8 +49,7 @@ int main()
 	cin>>n;
 	long long int a[n];
 	for(long long int i=0;i<n;i++)
-		cin>>a[i];
-	merge_sort(0,n-1,a);
+	merge_sort&count(0,n-1,a);
     cout<<::count<<endl;
 
 	return 0;
