@@ -34,39 +34,4 @@ until finished
 
 
 
-### Break down into end to end tests
 
-```
-Give an example
-```
-
-### And coding style tests
-
-
-
-```
-Give an example
-```
-
-## Deployment
-
-
-## Built With
-
-
-
-## Contributing
-
-
-
-## Versioning
-
-
-## Authors
-
-
-
-## License
-
-
-## Acknowledgments
