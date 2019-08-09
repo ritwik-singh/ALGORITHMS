@@ -9,7 +9,8 @@ class graph
 	public:
 		graph(int v);
 		void addEdge(int v, int w);
-		void DFS(int s);
+		void intial();
+		void DFS(int v ,bool visited[]);
 
 };
 
@@ -26,15 +27,24 @@ void graph::addEdge(int v,int w)
 	adj[v].push_back(w);
 }
 
+void graph::DFS(int v,bool visited[])
+{
+	visited[v] = true;
+	cout<<v<<" ";
+	list<int>::iterator i;
+	for(i = adj[v].begin(); i != adj[v].end(); ++i) 
+		if(!visited[*i])
+			DFS(*i,visited);
+}
 
-void graph::DFS(int s)
+void graph::intial()
 {
 	bool *visited = new bool[v];
 	for(int i = 0;i<V;i++)
 		visited[i] = false;
-
-	list<int> queue;
-	visited[s] = true;
+	for(int i = 0;i<V;i++)
+		if(!visited[i])
+			DFS(i,visited);
 }
 
 
